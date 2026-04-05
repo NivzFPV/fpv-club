@@ -2,6 +2,12 @@
 <html lang="he" dir="rtl">
 
 <head>
+  <script>
+    // Redirect to built site on production (Hostinger serves raw source at root)
+    if (window.location.hostname !== 'localhost' && !window.location.pathname.startsWith('/public_html')) {
+      window.location.replace('/public_html/');
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FPV Racing Club | כפר הס</title>
