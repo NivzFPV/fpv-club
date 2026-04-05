@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FPV Racing Club | כפר הס</title>
   <meta name="description" content="חוג רחפני מרוץ FPV בכפר הס - בואו ללמוד להכיר את רכיבי הרחפן, לקנפג ולהטיס רחפנים.">
-  <script type="module" crossorigin src="./assets/index-Bbd6Vp-D.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BlzK6ZWM.css">
+  <script type="module" crossorigin src="./assets/index-Cl6R24z5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-0bzSImrG.css">
 </head>
 
 <body class="antialiased">
@@ -386,17 +386,17 @@
 
             <h3 class="text-3xl font-bold text-slate-900 mb-6 mt-4">הצטרפו אלינו</h3>
 
-            <form class="space-y-5">
+            <form id="registration-form" class="space-y-5">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label class="block text-sm font-medium text-slate-600 mb-1">שם הילד/ה</label>
-                  <input type="text"
+                  <input type="text" name="childName"
                     class="w-full bg-white/80 border border-gray-300 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-cyan-neon focus:ring-1 focus:ring-cyan-neon transition-colors placeholder-slate-400"
                     placeholder="שם מלא" required>
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-slate-600 mb-1">גיל</label>
-                  <input type="number" min="8" max="18"
+                  <input type="number" min="8" max="18" name="age"
                     class="w-full bg-white/80 border border-gray-300 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-cyan-neon focus:ring-1 focus:ring-cyan-neon transition-colors placeholder-slate-400"
                     placeholder="13" required>
                 </div>
@@ -405,13 +405,13 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label class="block text-sm font-medium text-slate-600 mb-1">שם ההורה</label>
-                  <input type="text"
+                  <input type="text" name="parentName"
                     class="w-full bg-white/80 border border-gray-300 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-cyan-neon focus:ring-1 focus:ring-cyan-neon transition-colors placeholder-slate-400"
                     placeholder="שם מלא" required>
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-slate-600 mb-1">דואר אלקטרוני (של ההורה)</label>
-                  <input type="email"
+                  <input type="email" name="email"
                     class="w-full bg-white/80 border border-gray-300 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-cyan-neon focus:ring-1 focus:ring-cyan-neon transition-colors placeholder-slate-400"
                     placeholder="example@email.com" required>
                 </div>
@@ -420,24 +420,26 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label class="block text-sm font-medium text-slate-600 mb-1">טלפון נייד</label>
-                  <input type="tel"
+                  <input type="tel" name="phone"
                     class="w-full bg-white/80 border border-gray-300 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-cyan-neon focus:ring-1 focus:ring-cyan-neon transition-colors placeholder-slate-400"
                     placeholder="050-0000000" required>
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-slate-600 mb-1">יישוב מגורים</label>
-                  <input type="text"
+                  <input type="text" name="city"
                     class="w-full bg-white/80 border border-gray-300 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-cyan-neon focus:ring-1 focus:ring-cyan-neon transition-colors placeholder-slate-400"
                     placeholder="כפר הס והסביבה" required>
                 </div>
               </div>
 
               <div class="pt-6">
-                <button type="button"
+                <button type="submit" id="submit-btn"
                   class="w-full pulse-glow bg-cyan-neon hover:bg-slate-800 text-white font-orbitron font-bold text-xl py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
                   שלחו פרטים ונחזור אליכם
                 </button>
               </div>
+
+              <div id="form-message" class="hidden text-center mt-4 p-3 rounded-lg text-sm font-bold w-full"></div>
             </form>
 
             <div class="mt-8 pt-6 border-t border-gray-200">
