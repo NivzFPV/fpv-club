@@ -1,0 +1,10 @@
+# Redirect all requests to the public_html subfolder
+# This tells Hostinger's Apache server to serve the built site
+
+RewriteEngine On
+
+# Only rewrite if the request is NOT already pointing into public_html
+RewriteCond %{REQUEST_URI} !^/public_html/
+
+# Rewrite all requests to public_html
+RewriteRule ^(.*)$ /public_html/$1 [L]
