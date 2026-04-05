@@ -1,4 +1,5 @@
 node_modules/
+public_html/
 dist/
 .env
 .DS_Store

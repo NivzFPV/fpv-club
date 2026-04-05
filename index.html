@@ -2,17 +2,12 @@
 <html lang="he" dir="rtl">
 
 <head>
-  <script>
-    // Redirect to built site on production (Hostinger serves raw source at root)
-    if (window.location.hostname !== 'localhost' && !window.location.pathname.startsWith('/public_html')) {
-      window.location.replace('/public_html/');
-    }
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FPV Racing Club | כפר הס</title>
   <meta name="description" content="חוג רחפני מרוץ FPV בכפר הס - בואו ללמוד להכיר את רכיבי הרחפן, לקנפג ולהטיס רחפנים.">
-  <link rel="stylesheet" href="./style.css">
+  <script type="module" crossorigin src="./assets/index-Bbd6Vp-D.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BlzK6ZWM.css">
 </head>
 
 <body class="antialiased">
@@ -23,7 +18,7 @@
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center cursor-pointer">
-          <img src="/logo.png" alt="Race Drones Logo" class="h-12 md:h-14 object-contain">
+          <img src="./logo.png" alt="Race Drones Logo" class="h-12 md:h-14 object-contain">
         </div>
 
         <!-- Desktop Menu -->
@@ -493,7 +488,6 @@
     <p>&copy; Race Drones כפר הס. כל הזכויות שמורות.</p>
   </footer>
 
-  <script type="module" src="/main.js"></script>
 </body>
 
 </html>

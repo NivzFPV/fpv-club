@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './', // This ensures all paths are relative, so it works on GitHub AND HostGator
+  root: 'src',
+  base: './',
+  publicDir: '../public',
   build: {
-    outDir: 'public_html',
-    emptyOutDir: true,
+    outDir: '..',
+    emptyOutDir: false,
   }
 })

@@ -2,18 +2,11 @@
 <html lang="he" dir="rtl">
 
 <head>
-  <script>
-    // Redirect to built site on production (Hostinger serves raw source at root)
-    if (window.location.hostname !== 'localhost' && !window.location.pathname.startsWith('/public_html')) {
-      window.location.replace('/public_html/');
-    }
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FPV Racing Club | כפר הס</title>
   <meta name="description" content="חוג רחפני מרוץ FPV בכפר הס - בואו ללמוד להכיר את רכיבי הרחפן, לקנפג ולהטיס רחפנים.">
-  <script type="module" crossorigin src="./assets/index-Bbd6Vp-D.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BlzK6ZWM.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="antialiased">
@@ -24,7 +17,7 @@
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center cursor-pointer">
-          <img src="./assets/logo-t1o4QLGe.png" alt="Race Drones Logo" class="h-12 md:h-14 object-contain">
+          <img src="/logo.png" alt="Race Drones Logo" class="h-12 md:h-14 object-contain">
         </div>
 
         <!-- Desktop Menu -->
@@ -111,7 +104,7 @@
               <div
                 class="w-full h-full rounded-2xl bg-white flex items-center justify-center overflow-hidden relative z-10 border border-gray-100 shadow-inner">
                 <!-- Using a placeholder for now, you can replace with real image -->
-                <img src="./img/6.jpg" alt="NivzFPV - Instructor" class="w-full h-full object-cover"
+                <img src="/img/6.jpg" alt="NivzFPV - Instructor" class="w-full h-full object-cover"
                   style="object-position: 75% 20%; transform: scale(1.15);">
                 <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
                 <div class="absolute bottom-6 left-0 right-0 text-center">
@@ -224,7 +217,7 @@
             <div
               class="absolute inset-0 bg-cyan-neon/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             </div>
-            <img src="./img/1.jpg" alt="FPV Drones Fleet"
+            <img src="/img/1.jpg" alt="FPV Drones Fleet"
               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
           </div>
         </div>
@@ -233,7 +226,7 @@
             <div
               class="absolute inset-0 bg-cyber-purple/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             </div>
-            <img src="./img/2.jpg" alt="FPV Drone Setup"
+            <img src="/img/2.jpg" alt="FPV Drone Setup"
               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
           </div>
         </div>
@@ -242,7 +235,7 @@
             <div
               class="absolute inset-0 bg-cyan-neon/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             </div>
-            <img src="./img/3.jpg" alt="Pink FPV Drone"
+            <img src="/img/3.jpg" alt="Pink FPV Drone"
               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
           </div>
         </div>
@@ -251,7 +244,7 @@
             <div
               class="absolute inset-0 bg-cyber-purple/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             </div>
-            <img src="./img/4.jpg" alt="Trophies"
+            <img src="/img/4.jpg" alt="Trophies"
               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
           </div>
         </div>
@@ -494,6 +487,7 @@
     <p>&copy; Race Drones כפר הס. כל הזכויות שמורות.</p>
   </footer>
 
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
