@@ -1,3 +1,11 @@
-# This file is not used in production.
-# The actual .htaccess for deployment is in dist/.htaccess
+# Internally rewrite all requests to the dist/ subfolder
+# This allows Hostinger's Git auto-deploy to work since the repo
+# is cloned directly into public_html
 
+RewriteEngine On
+
+# Don't rewrite if already pointing into dist/
+RewriteCond %{REQUEST_URI} !^/dist/
+
+# Rewrite all requests to dist/
+RewriteRule ^(.*)$ /dist/$1 [L]
